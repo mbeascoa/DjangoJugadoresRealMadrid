@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'estilo/Styleaco.css'%}"
 </head>
 <body>
 <h1 style="color:blue;">Listado jugadores Real Madrid</h1>
@@ -20,11 +21,7 @@
                 <td>{{jug.Nombre}}</td>
                 <td>{{jug.Demarcacion}}</td>
                 <td>{{jug.Numero}}</td>
-                <td><img src="{% static 'imagenes/{{jug.Foto}}'%}" width="150" height="150"/></td>
-
-                <img src="{% static 'peliculas/dostontosmuytontos.jpg'%}" width="450" height="670"/>
- 
-
+                <td><img src="{% static 'imagenes/'%}{{jug.Foto}}" width="150" height="150"/></td>
 
             </tr>
        {% endfor%}
